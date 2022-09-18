@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title> Instagram </title>
+        <link rel="StyleSheet" href="css/StyleSheet.css">
+        <div class="TopBar">
+            <img alt="Instagram" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" width="80" height="23" >
+        </div>
+        <div class="TopMenu" id="FloatBar">
+            <div class="dropdown1">
+                <button onclick="showDropdown1()" class="Menu1">Menu</button>
+                <div id="Menu1Dropdown" class="Menu1-content">
+                  <a href="https://www.instagram.com/">Home</a>
+                  <a href="https://about.instagram.com/">About</a>
+                  <a href="https://help.instagram.com/">Help</a>
+                  <div class="SubMenu4">More
+                      <div class="SubMenu4Dropdown">
+                            <a href="">Explore</a>
+                            <a href="">Activity</a>
+                            <a href="">Suggestions</a>
+                            <a href="">Search</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="dropdown2">
+                <button onclick="showDropdown2()" class="Menu2">Additional</button>
+                <div id="Menu2Dropdown" class="Menu2-content">
+                  <a href="">Settings</a>
+                  <a href="">Privacy Policy</a>
+                  <a href="">Language</a>
+                  <a href="">Download</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <article class="Page">
+            <div class="PictureBox">
+                <div class="HomePicture">
+                    <img class="HomePhone" src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png"  alt="">  
+                </div>
+            </div>
+            
+            <div class="MainBox">
+                <div class="TitleBox">
+                    <div class="IGLogo">
+                        <h1>
+                            <img alt="InstagramLogo" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" width="160" height="47" >
+                        </h1>
+                    </div>
+                    
+                    <div class="LoginBox">
+                        <form class="LoginForm">
+                            <div class="PrimaryLoginBox">
+                                <div class="EmailBox">
+                                    <input class="EMBox" placeholder="Phone number, username, or email" name="username" type="text" >
+                                </div>
+
+                                <div class="PasswordBox">
+                                    <input class="PWBox" placeholder="Password" name="Password" type="text">
+                                </div>
+
+                                <div class="LogInBox">
+                                    <button class="LogInButton">
+                                        <div class="LoginText">Log In</div>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+
+        <button class="open-button" onclick="openForm()">Chat</button>
+
+            <div class="PopupBox" id="PopupBox">
+                <div class="PopupChatContainer">
+                    <h1>Chat</h1>
+                    <textarea Class="Chatbox" name="Chatbox" id="CB" cols="25" rows="25" placeholder="Type Something.." ></textarea>
+                    <button type="submit" class="SendButton">Send</button>
+                    <button type="button" class="CancelButton" onclick="closeForm()">Close</button>
+                </div>
+            </div>
+
+        <script src="js/FunctionSheet.js"></script>
+    </body>
+
+    <footer>
+            <a href="https://about.instagram.com/">
+                <div class="AboutLink">About</div>
+            </a>
+
+            <a href="https://help.instagram.com/">
+                <div class="AboutLink">Help</div>
+            </a>
+
+            <a href="/legal/privacy/">
+                <div class="PrivacyLink">Privacy</div>
+            </a>
+
+            <a href="https://help.instagram.com/581066165581870">
+                <div class="TermsLink">Terms</div>
+            </a>
+
+            <a href="/explore/locations/">
+                <div class="LocationLink">Locations</div>
+            </a>
+    </footer>
+</html>

@@ -1,0 +1,232 @@
+.TopBar{
+    position: relative;
+    animation-name: TopBar;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: left;
+    padding: 4px 0px 16px;
+    height: 15px;
+  }
+  
+  @keyframes TopBar {
+  
+    0%  {left:0px;}
+    50%{left: 1450px;}
+    100%{left: 0px;}
+  }
+
+  .TopMenu{
+    height: 50px;
+    width: 100%;
+    background-color: lavenderblush;
+    display: grid;
+    grid-template-columns: 5% 5%;
+    position: absolute;
+}
+
+.Menu1 {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.Menu1:hover, .Menu1:focus {
+    background-color: #2980B9;
+  }
+  
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+.Menu1-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.Menu1-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.SubMenu4{
+    padding: 12px 16px;
+    display: block;
+}
+
+.SubMenu4Dropdown{
+    display: none;
+    text-align: right;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.SubMenu4:hover .SubMenu4Dropdown {display: contents;}
+
+  
+.dropdown1 a:hover {background-color: #ddd;}
+  
+.Menu2 {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.Menu2:hover, .Menu2:focus {
+    background-color: #2980B9;
+  }
+  
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+.Menu2-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.Menu2-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown2 a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+body{
+    background-color: rgb(205, 230, 240);
+}
+
+.IGLogo{
+    transform: rotate(15deg);
+}
+
+.PictureBox{
+    width: fit-content;
+    transform: translateX(325px) translateY(50px);
+}
+
+.MainBox{
+    border: 7px lavenderblush solid;
+    width: fit-content;
+    transform: translateX(760px) translateY(-525px);
+    background-color: white;
+}
+
+.TitleBox{
+    background-color: white;
+    color: black;
+    margin: 30px auto 12px;
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    height: 300px;
+    width: 300px;
+    text-align: center;    
+    padding-top: 3px;
+}
+
+.EMBox{
+    margin: 10px;
+    padding-top: 15px;
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.PWBox{
+    margin: 10px;
+    padding-top: 15px;
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.LogInButton{
+    margin: 10px;
+    background-color: rgba(var(--d69,0,149,246),.3);
+    opacity: 1;
+    height: 40px;
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 275px;
+  }
+
+.SendButton{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    width: 275px;
+    margin-bottom: 7px;
+}
+
+.CancelButton{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 275px;
+}
+
+.PopupBox{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.PopupChatContainer{
+    width: 275px;
+    padding: 10px;
+    background-color: lavenderblush;
+}
+
+.Chatbox{
+    padding: 10px;
+    width: 250px;
+    resize: none;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 5%;
+}
